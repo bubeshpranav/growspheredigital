@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <a href="#home" className="mb-8 block">
               <img 
-                src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776092560/Growsphere_logo_design_in_black_and_red_v57jlc.png" 
+                src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121269/Untitled_design_3_u0uflj.svg" 
                 alt="GrowSphere Logo" 
                 className="h-12 w-auto" 
                 referrerPolicy="no-referrer"
@@ -22,14 +22,22 @@ export default function Footer() {
               GrowSphere is a premium digital marketing agency dedicated to helping brands scale with performance-driven strategies and creative excellence.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Twitter, Instagram, Linkedin, MessageCircle].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: "#" },
+                { Icon: Twitter, href: "#" },
+                { Icon: Instagram, href: "https://www.instagram.com/growsphere_.digital/" },
+                { Icon: Linkedin, href: "#" },
+                { Icon: MessageCircle, href: "https://wa.me/9080762984" },
+              ].map((social, i) => (
                 <motion.a
                   key={i}
                   whileHover={{ y: -5, color: "#E50914" }}
-                  href="#"
+                  href={social.href}
+                  target={social.href !== "#" ? "_blank" : undefined}
+                  rel={social.href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-white/10 transition-all"
                 >
-                  <Icon size={20} />
+                  <social.Icon size={20} />
                 </motion.a>
               ))}
             </div>
@@ -63,15 +71,33 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-8">Contact</h4>
             <ul className="space-y-4 text-slate-400">
               <li className="flex items-center space-x-3">
-                <span className="text-brand font-bold">E:</span>
+                <img 
+                  src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121567/email-svgrepo-com_sxl77c.svg" 
+                  alt="Email" 
+                  className="w-5 h-5" 
+                  style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                  referrerPolicy="no-referrer"
+                />
                 <a href="mailto:growspheredigital26@gmail.com" className="hover:text-brand transition-colors">growspheredigital26@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
-                <span className="text-brand font-bold">P:</span>
+                <img 
+                  src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121809/phone-svgrepo-com_t05ifx.svg" 
+                  alt="Phone" 
+                  className="w-5 h-5" 
+                  style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                  referrerPolicy="no-referrer"
+                />
                 <a href="tel:+91 9080762984" className="hover:text-brand transition-colors">+91 9080762984</a>
               </li>
               <li className="flex items-center space-x-3">
-                <span className="text-brand font-bold">W:</span>
+                <img 
+                  src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121912/whatsapp-whats-app-svgrepo-com_gu1oah.svg" 
+                  alt="WhatsApp" 
+                  className="w-5 h-5" 
+                  style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                  referrerPolicy="no-referrer"
+                />
                 <a href="https://wa.me/9080762984" className="hover:text-brand transition-colors">WhatsApp Chat</a>
               </li>
             </ul>
