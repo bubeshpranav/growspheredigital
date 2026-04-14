@@ -67,12 +67,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Only attempt to send if SMTP_PASS is provided
     if (process.env.SMTP_PASS) {
       await transporter.sendMail(mailOptions);
-      return res.status(200).json({ success: true, message: "Email sent successfully" });
+      return res.status(200).json({ success: true, message: "Thank you! Your message has been sent successfully." });
     } else {
       console.log("SMTP_PASS not set in environment variables. Demo mode.");
       return res.status(200).json({ 
         success: true, 
-        message: "Message received! (Email sending is in demo mode - check server logs for content)" 
+        message: "Thank you! Your message has been received. We'll get back to you shortly." 
       });
     }
   } catch (error) {

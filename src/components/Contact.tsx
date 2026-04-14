@@ -79,8 +79,14 @@ export default function Contact() {
 
             <div className="space-y-8">
               <div className="flex items-start space-x-6">
-                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center text-brand shadow-sm">
-                  <Mail size={24} />
+                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center shadow-sm overflow-hidden p-3">
+                  <img 
+                    src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121567/email-svgrepo-com_sxl77c.svg" 
+                    alt="Email" 
+                    className="w-full h-full" 
+                    style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Email Us</p>
@@ -89,8 +95,14 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center text-brand shadow-sm">
-                  <Phone size={24} />
+                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center shadow-sm overflow-hidden p-3">
+                  <img 
+                    src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121809/phone-svgrepo-com_t05ifx.svg" 
+                    alt="Phone" 
+                    className="w-full h-full" 
+                    style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Call Us</p>
@@ -99,8 +111,14 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-6">
-                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center text-brand shadow-sm">
-                  <MessageCircle size={24} />
+                <div className="w-14 h-14 rounded-2xl bg-soft-grey flex items-center justify-center shadow-sm overflow-hidden p-3">
+                  <img 
+                    src="https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776121912/whatsapp-whats-app-svgrepo-com_gu1oah.svg" 
+                    alt="WhatsApp" 
+                    className="w-full h-full" 
+                    style={{ filter: 'invert(13%) sepia(94%) saturate(7471%) hue-rotate(356deg) brightness(91%) contrast(116%)' }}
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">WhatsApp</p>
