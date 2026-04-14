@@ -6,32 +6,32 @@ const projects = [
     title: "E-commerce Revolution",
     industry: "Fashion Retail",
     results: "3x Revenue Growth",
-    image: "https://picsum.photos/seed/fashion/600/400",
+    image: "https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776125858/0c6ab908-e1ff-49f5-9336-74d06c376cd2_ylra0x.png",
   },
   {
     title: "SaaS Market Entry",
     industry: "Tech Startup",
     results: "150% Lead Increase",
-    image: "https://picsum.photos/seed/tech/600/400",
+    image: "https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776125806/0e6f2e83-071c-435b-9b27-bcd6459d7183_h7qdzf.png",
   },
   {
     title: "Local Brand Scaling",
     industry: "Food & Beverage",
     results: "50k+ New Followers",
-    image: "https://picsum.photos/seed/food/600/400",
+    image: "https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776126064/619c7dd9-053d-4b22-b28a-426840a2a6a1_f1x3vw.png",
   },
   {
     title: "B2B Lead Generation",
     industry: "Manufacturing",
     results: "40% Lower CPL",
-    image: "https://picsum.photos/seed/factory/600/400",
+    image: "https://res.cloudinary.com/dhjfoibdf/image/upload/q_auto/f_auto/v1776126177/dd218866-7de8-45f5-9f51-e137e4141a93_gy4qht.png",
   },
 ];
 
 export default function Portfolio() {
   return (
     <section id="portfolio" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <motion.span
@@ -61,7 +61,7 @@ export default function Portfolio() {
           </motion.button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -69,12 +69,12 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative rounded-3xl overflow-hidden aspect-[4/3] shadow-lg"
+              className="group relative rounded-3xl overflow-hidden aspect-[16/10] shadow-lg"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
               
