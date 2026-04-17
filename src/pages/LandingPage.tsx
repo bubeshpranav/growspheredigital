@@ -11,9 +11,9 @@ import Footer from "../components/Footer";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative w-full overflow-x-hidden pt-0 transition-all duration-300">
       <Navbar />
-      <main>
+      <main className="w-full relative overflow-x-hidden">
         <Hero />
         <Services />
         <Features />

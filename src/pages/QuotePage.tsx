@@ -88,7 +88,7 @@ export default function QuotePage() {
   };
 
   return (
-    <div className="min-h-screen bg-white py-12 px-6">
+    <div className="min-h-screen bg-white py-12 px-6 relative w-full overflow-x-hidden">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
